@@ -1,0 +1,105 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "Is anyone there ?","Hey","Hola", "Hello", "Good morning", "Good Afternoon",
+         "Salam"],
+         "responses": ["Hello, How can I help you ?", "Hey There, This is ESI Chatbot How can I help you ?", "Hi there, how can I help ?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "lay3awn"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "Peace!"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+          "responses": ["Happy to help!", "Any time!", "My pleasure"],
+          "context": [""]
+         },
+        {"tag": "state",
+          "patterns": ["How are you ?", "What's up ?", "What's new ?", "Are you doing well?", "Are you okay?"],
+          "responses": ["I'm doing great! What about you?", "Never been better! and you?"],
+          "context": [""]
+         },
+        {"tag": "degree",
+         "patterns": ["What degrees are offered at ESI?", "What are the fields that ESI teach?", "In which domain does ESI form engineers?", "What are my choices at ESI degree wise?", "How many branches are in the Engineering Cycle at ESI?"],
+         "responses": ["At ESI, there is only Information science and Data and Knowledge Engineering degree for now but other degrees are planned for the near future such as Digita Information Engineer Degree and Information Systems and digital Transformation engineering degree.", 
+          "Currently 3 Branches are expected for next year: Knowledge engineering and data science - Information systems engineering and digital transformation - Digital information engineering"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, I can't understand you", "Please give me more information", "I am not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "requirements",
+         "patterns": ["What are the requirements to get into ESI?", "What am i supposed to do to enroll ESI?", "How can i get into ESI?", "How can i enroll ESI", "how is it possible to get into ESI?"],
+         "responses": ["Only students who pass the CNC have access to an engineering degree at ESI.", "It is a must to pass CNC exam after preparatory classes to get into ESI"],
+         "context": [""]
+        },
+        {"tag": "foreign_students",
+         "patterns": ["Can foreign students study at ESI?", "Are students from different origins allowed to study in ESI?", "Is it possible to enroll ESI as a foreign student?"],
+         "responses": ["Yes, ESI admits foreign students within the limit of 10% of the school’s overall reception capacity."],
+         "context": [""]
+        },
+        {"tag": "studies_length",
+         "patterns": ["How many semesters are in a year, and the overall degree?", "How long the studies are at ESI?", "How many years do you study at ESI?" ],
+         "responses": ["There are 2 semesters a year, and 6 semesters making up the 3 years of the degree."],
+         "context": [""]
+        },
+        {"tag": "semester_length",
+         "patterns": ["How long is a semester?", "How long is each semester at ESI?", "How many weeks do you study per semester?", "Are semesters long or short?"],
+         "responses": ["A semester is 16 to 18 weeks long including both courses and evaluation."],
+         "context": [""]
+        },
+        {"tag": "modules_number",
+         "patterns": ["How many modules are in a semester?", "How many modules are you supposed to complete at ESI?", "Is there a specific number of modules for each Semester?" ],
+         "responses": ["Typically, you will be expected to complete eight modules in a semester."],
+         "context": ["studies_length"]
+        },
+        {"tag": "lodging",
+         "patterns": ["Is there a boarding school at ESI?", "Where do students rent?", "Where can i stay during my studies at ESI?"],
+         "responses": ["At ESI there’s no boarding school, student usually rent houses in BAM, CPR, SALE, or Elkamra", "No unfortunately there's no boarding school, However students usually find good rent deals at BAM, CPR, SALE, or Elkamra"],
+         "context": [""]
+        },
+        {"tag": "fees_and_aids",
+          "patterns": ["Is ESI a private school?", "How much are studying fees at ESI?", "Are there financial aids to integrate ESI?"],
+          "responses": ["ESI is a public school, the only fees a student pays is the insurance fees (20.5 Dhs)."],
+          "context": [""]
+        },
+        {"tag": "parascolar_activities",
+          "patterns": ["Are there any parascolar activities?", "Are there parascolar clubs at ESI?", "How many clubs are there at ESI?","What are the clubs existing in ESI?"],
+          "responses": ["At ESI there are 8 parascolar clubs: Enactus ESI - GREAT DEBATERS - CODE ESI - JCMP ESI - DBS ESI - JAPANESE CULTURE CLUB - FORUM GENI - ESI ARTS"],
+          "context": [""]
+         },
+         {"tag": "5/2",
+          "patterns": ["Can i combine between studying at ESI and preparing for my 5/2?", "Are there flexible schedules at ESI?", "Can i prepare for another CNC while studying at ESI?"],
+          "responses": ["No, the week is usually full.", "Mostly, the weeks are full thus that is unfortunately too hard to achieve."],
+          "context": [""]
+         },
+         {"tag": "memes_grp",
+          "patterns": ["Is there a memes group?", "Is there any fun groups at ESI?", "Do ESI students make good memes?"],
+          "responses": ["Yes, welcome to the ESI memes Club.", "Of course! That's one of the most active groups at ESI!"],
+          "context": [""]
+         },
+         {"tag": "relationships",
+          "patterns": ["Are there friendly and respectful relationships between students and their teachers?", "Are teachers friendly with students?", "How are the teachers at ESI?"],
+          "responses": ["Teachers are mostly good at ESI and there is a familial ambient at the school between all parts."],
+          "context": [""]
+         },
+         {"tag": "marks",
+          "patterns": ["What is the total mark that I need to validate a module?", "What is the Minimum needed to validate a module?", "How much do i need to get a valid module?"],
+          "responses": ["You should have a mark superior or equals to 12/20 in order to validate any module at ESI."],
+          "context": [""]
+         },
+         {"tag": "program",
+          "patterns": ["What are the elements that are taught at ESI?", "What is ESI curriculum?", "Where can i get more information about ESI?", "What do you teach specifically at ESI?"],
+          "responses": ["You can check this link for details about what is taught in ESI: bit.ly/2IFdL7c"],
+          "context": ["degree"]
+         },
+         {"tag": "work",
+          "patterns": ["What are the possible work areas after ESI?", "Where do ESI engineers operate?", "Where do ESI engineers work?", "What do you do after ESI?"],
+          "responses": ["ESI students mainly occupies the following positions: data scientist, Knowledge manager, strategic watchman, information scientist, document controller, community manager, information architect and many more! You can check www.esi.ac.ma for more information!"],
+          "context": [""]
+         }
+   ]
+}
